@@ -13,6 +13,9 @@
 		3B03FAC1220C05D800653F3E /* navigationWithTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B03FABF220C05D800653F3E /* navigationWithTableView.xcdatamodeld */; };
 		3B03FAC3220C05DA00653F3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B03FAC2220C05DA00653F3E /* Assets.xcassets */; };
 		3B03FAC6220C05DA00653F3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B03FAC4220C05DA00653F3E /* LaunchScreen.storyboard */; };
+		3B03FACE220C06B600653F3E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B03FACD220C06B600653F3E /* SignInViewController.swift */; };
+		3B03FAD0220C06C900653F3E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B03FACF220C06C900653F3E /* SignUpViewController.swift */; };
+		3B03FAD2220C255B00653F3E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B03FAD1220C255B00653F3E /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3B03FAC2220C05DA00653F3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B03FAC5220C05DA00653F3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B03FAC7220C05DA00653F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B03FACD220C06B600653F3E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3B03FACF220C06C900653F3E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3B03FAD1220C255B00653F3E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			children = (
 				3B03FAB8220C05D800653F3E /* AppDelegate.swift */,
 				3B03FABA220C05D800653F3E /* ViewController.swift */,
+				3B03FACD220C06B600653F3E /* SignInViewController.swift */,
+				3B03FACF220C06C900653F3E /* SignUpViewController.swift */,
+				3B03FAD1220C255B00653F3E /* TableViewController.swift */,
 				3B03FABC220C05D800653F3E /* Main.storyboard */,
 				3B03FAC2220C05DA00653F3E /* Assets.xcassets */,
 				3B03FAC4220C05DA00653F3E /* LaunchScreen.storyboard */,
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B03FACE220C06B600653F3E /* SignInViewController.swift in Sources */,
+				3B03FAD2220C255B00653F3E /* TableViewController.swift in Sources */,
 				3B03FABB220C05D800653F3E /* ViewController.swift in Sources */,
 				3B03FAB9220C05D800653F3E /* AppDelegate.swift in Sources */,
 				3B03FAC1220C05D800653F3E /* navigationWithTableView.xcdatamodeld in Sources */,
+				3B03FAD0220C06C900653F3E /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,16 +298,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = navigationWithTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyoti.navigationWithTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,16 +318,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = navigationWithTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyoti.navigationWithTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

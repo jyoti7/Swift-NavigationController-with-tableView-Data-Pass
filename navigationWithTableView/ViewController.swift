@@ -15,6 +15,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func clickToSignVC(_ sender: UIButton) {
+        let signVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+        self.navigationController?.pushViewController(signVC, animated: true)
+        
+        
+    }
+    
+    @IBAction func clickTosignUpVC(_ sender: Any) {
+        
+        let signUpVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        self.navigationController?.pushViewController(signUpVC, animated: true)
+        
+    }
+    
 }
 
