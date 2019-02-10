@@ -30,13 +30,13 @@ class SignInViewController: UIViewController {
    
     @IBAction func userDetailsNaviClick(_ sender: UIButton) {
       
-        if emailTxtField.text == "aapbd@bd.com" && pwTxtField.text == "1234" {
+        if emailTxtField.text == "a" && pwTxtField.text == "1234" {
             
             UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
             let userDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "TableViewController") as! TableViewController
             self.navigationController?.pushViewController(userDetailsVC, animated: true)
               userDetailsVC.emailPassed = emailTxtField.text
-            userDetailsVC.pwPassed = pwTxtField.text
+              userDetailsVC.pwPassed = pwTxtField.text
         }else{
             showToast(controller: self, message : "", seconds: 2.0)
             print("Logging not Possible")
