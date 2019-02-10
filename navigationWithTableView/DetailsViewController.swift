@@ -12,36 +12,37 @@ class DetailsViewController: UIViewController {
 
     @IBOutlet weak var detailsTitle: UILabel!
     
-    @IBOutlet weak var detailsLabel: UILabel!
+    
     @IBOutlet weak var detailsImg: UIImageView!
    
     
     var strTitle = String()
-    var strDetails = String()
+   var strDetails = String()
     var strImg = UIImage()
     
     
     
     
+    @IBAction func imageSwipeDown(_ sender: UISwipeGestureRecognizer) {
+        
+        print("image down")
+        let aboutVC = self.storyboard?.instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
+        
+        aboutVC.strAboutImg = detailsImg.image!
+        aboutVC.strAboutDetails = strDetails
+        
+        self.navigationController?.pushViewController(aboutVC, animated: true)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
        
         detailsTitle.text = strTitle
-        detailsLabel.text = strDetails
+        
         detailsImg.image = strImg
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

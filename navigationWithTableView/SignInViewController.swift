@@ -30,7 +30,7 @@ class SignInViewController: UIViewController {
    
     @IBAction func userDetailsNaviClick(_ sender: UIButton) {
       
-        if emailTxtField.text == "a" && pwTxtField.text == "1234" {
+        if emailTxtField.text == "a@a.com" && pwTxtField.text == "1234" {
             
             UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
             let userDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "TableViewController") as! TableViewController

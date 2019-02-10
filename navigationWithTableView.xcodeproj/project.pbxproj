@@ -18,6 +18,7 @@
 		3B03FAD2220C255B00653F3E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B03FAD1220C255B00653F3E /* TableViewController.swift */; };
 		3BCA6F06220FC3B400217B87 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA6F05220FC3B400217B87 /* TableViewCell.swift */; };
 		3BCA6F08220FE9DB00217B87 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA6F07220FE9DB00217B87 /* DetailsViewController.swift */; };
+		3BCA6F0A220FFF8200217B87 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA6F09220FFF8200217B87 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3B03FAD1220C255B00653F3E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3BCA6F05220FC3B400217B87 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3BCA6F07220FE9DB00217B87 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		3BCA6F09220FFF8200217B87 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				3B03FAD1220C255B00653F3E /* TableViewController.swift */,
 				3BCA6F05220FC3B400217B87 /* TableViewCell.swift */,
 				3BCA6F07220FE9DB00217B87 /* DetailsViewController.swift */,
+				3BCA6F09220FFF8200217B87 /* AboutViewController.swift */,
 				3B03FABC220C05D800653F3E /* Main.storyboard */,
 				3B03FAC2220C05DA00653F3E /* Assets.xcassets */,
 				3B03FAC4220C05DA00653F3E /* LaunchScreen.storyboard */,
@@ -156,6 +159,7 @@
 				3B03FACE220C06B600653F3E /* SignInViewController.swift in Sources */,
 				3B03FAD2220C255B00653F3E /* TableViewController.swift in Sources */,
 				3B03FABB220C05D800653F3E /* ViewController.swift in Sources */,
+				3BCA6F0A220FFF8200217B87 /* AboutViewController.swift in Sources */,
 				3BCA6F08220FE9DB00217B87 /* DetailsViewController.swift in Sources */,
 				3B03FAB9220C05D800653F3E /* AppDelegate.swift in Sources */,
 				3B03FAC1220C05D800653F3E /* navigationWithTableView.xcdatamodeld in Sources */,
